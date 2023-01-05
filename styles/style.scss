@@ -9,20 +9,33 @@
 
 }
 
-body {
+.article_fonce {
+
     background-color: $color_one;
+    color: $color_text_clair;
+}
+
+.article_clair {
+    background-color: $color_three;
+    color: $color_text_fonce
+}
+
+body {
+
+    background-color: $color_three;
     background-image: $background_image;
     background-size: 1000px;
-
     font-family: $main_font;
     font-weight: 400;
 
+
     header {
-        background-color: $color_two;
+        background-color: $color_one;
+
 
         .btn_header {
 
-            color: $color_one;
+            color: $color_three;
             font-weight: 600;
 
             padding-left: 10px;
@@ -36,8 +49,8 @@ body {
 
 
             &:hover {
-                background-color: $color_one;
-                color: $color_two;
+                background-color: $color_two;
+                color: $color_one;
             }
         }
     }
@@ -50,27 +63,22 @@ body {
 
     main {
         font-size: 16px;
-        color: $color_two;
+        color: $color_three;
 
         .c_article {
-            border-width: 2px;
-            border-style: solid;
-            border-color: $color_two;
             padding: 20px;
-
-            background-color: $color_three;
             margin-block: 10px;
             margin-inline: 40px;
         }
     }
 
     footer {
-        position: fixed;
+
         bottom: 0; // pas propre?
         width: 100%;
         height: 20px;
-        background-color: $color_two;
-        color: $color_one;
+        background-color: $color_one;
+        color: $color_three;
         font-size: 12px;
         font-weight: 200;
         text-align: left;
