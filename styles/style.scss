@@ -1,0 +1,78 @@
+@import "_variables.scss";
+@import "_functions.scss";
+
+
+
+.bolt {
+
+    font-weight: 600;
+
+}
+
+body {
+    background-color: $color_one;
+    background-image: $background_image;
+    background-size: 1000px;
+
+    font-family: $main_font;
+    font-weight: 400;
+
+    header {
+        background-color: $color_two;
+
+        .btn_header {
+
+            color: $color_one;
+            font-weight: 600;
+
+            padding-left: 10px;
+            padding-right: 10px;
+
+            $margin: 2px;
+            margin-left: $margin;
+            margin-right: $margin;
+            margin-top: $margin;
+            margin-bottom: $margin;
+
+
+            &:hover {
+                background-color: $color_one;
+                color: $color_two;
+            }
+        }
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+
+    }
+
+    main {
+        font-size: 16px;
+        color: $color_two;
+
+        .c_article {
+            border-width: 2px;
+            border-style: solid;
+            border-color: $color_two;
+            padding: 20px;
+
+            background-color: $color_three;
+            margin-block: 10px;
+            margin-inline: 40px;
+        }
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0; // pas propre?
+        width: 100%;
+        height: 20px;
+        background-color: $color_two;
+        color: $color_one;
+        font-size: 12px;
+        font-weight: 200;
+        text-align: left;
+    }
+}
