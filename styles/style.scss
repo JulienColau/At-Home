@@ -9,21 +9,12 @@
 
 }
 
-.article_fonce {
 
-    background-color: $color_one;
-    color: $color_text_clair;
-}
-
-.article_clair {
-    background-color: $color_three;
-    color: $color_text_fonce
-}
 
 body {
 
     background-color: $color_three;
-    background-image: $background_image;
+    background-image: $background_image; //tile d'une image semi transparente
     background-size: 1000px;
     font-family: $main_font;
     font-weight: 400;
@@ -51,8 +42,10 @@ body {
             &:hover {
                 background-color: $color_two;
                 color: $color_one;
+                // inversion des couleurs lorsqu'on passe la souris
             }
         }
+
     }
 
     .video {
@@ -63,12 +56,18 @@ body {
 
     main {
         font-size: 16px;
-        color: $color_three;
+        color: $color_text_fonce;
 
-        .c_article {
-            padding: 20px;
-            margin-block: 10px;
-            margin-inline: 40px;
+
+        .article_fonce {
+
+            background-color: $color_one;
+            color: $color_text_clair;
+        }
+
+        .article_clair {
+            background-color: $color_two;
+            color: $color_text_fonce
         }
     }
 
