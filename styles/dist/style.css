@@ -3,6 +3,26 @@
   font-weight: 600;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0ebdd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5b6b58;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   background-color: #e0ebdd;
   background-image: url("../rsc/background.png");
@@ -10,10 +30,11 @@ body {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
   font-weight: 400;
 }
-body header {
+
+header {
   background-color: #5b6b58;
 }
-body header .btn_header {
+header .btn_header {
   color: #e0ebdd;
   font-weight: 600;
   padding-left: 10px;
@@ -23,28 +44,30 @@ body header .btn_header {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-body header .btn_header:hover {
-  background-color: #86a686;
+header .btn_header:hover {
+  background-color: #e0ebdd;
   color: #5b6b58;
 }
-body .video {
+
+.video_top {
   width: 100%;
   height: auto;
 }
-body main {
+
+main {
   font-size: 16px;
   color: #38322b;
 }
-body main .article_fonce {
+main .article_fonce {
   background-color: #5b6b58;
   color: #ece5dd;
 }
-body main .article_clair {
+main .article_clair {
   background-color: #86a686;
   color: #38322b;
 }
-body footer {
-  bottom: 0;
+
+footer {
   width: 100%;
   height: 20px;
   background-color: #5b6b58;
